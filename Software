@@ -2,10 +2,20 @@
 //Materials will include: Arduino Uno, 9V Battery Source, Solderless Breadboard (Two), Two shift registers
 //jumper wires, wires, 16 LEDs, 16 10K Ohm resistors, and tape.
 
-const int SER = 8;
-const int LATCH = 9;
-const int CLK = 10;
+const int SER1 = 8;
+const int LATCH1 = 9;
+const int CLK1 = 10;
 
+const int SER2 = 4;
+const int LATCH2 = 5;
+const int CLK2 = 6; 
 
+int pattern = 0;
+
+void setup() {};
+
+boolean debounce() {};
+
+void loop() {};
 
 
