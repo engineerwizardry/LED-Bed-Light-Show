@@ -47,6 +47,7 @@ void loop() {
    delay(1000);
   }
   delay(2000);
+  
   //second pattern 
  for (var i = 0; i > 7; i++) {
    digitalWrite(LATCH1, LOW);
@@ -63,7 +64,9 @@ void loop() {
    digitalWrite(LATCH1, HIGH);
    digitalWrite(LATCH2, HIGH);
    delay(80);
-  }
+  }  
+  
+  //third pattern
   for (var i = 7; i >= 0; i--) {
    digitalWrite(LATCH1, LOW);
    digitalWrite(LATCH2, LOW);
@@ -82,7 +85,7 @@ void loop() {
   };
   delay(2000);
   
-  //third patten
+  //fourth patten
    digitalWrite(LATCH1, LOW);
    shiftOut(SER1, CLK1, MSBFIRST, B11000000); 
    digitalWrite(LATCH1, HIGH);
@@ -99,7 +102,8 @@ void loop() {
    shiftOut(SER1, CLK1, MSBFIRST, B00000011);
    digitalWrite(LATCH1, HIGH);
    delay(2000);
-  //fourth pattern
+   
+  //fifth pattern
   digitalWrite(LATCH2, LOW);
   shiftOut(SER2, CLK2, MSBFIRST, 1);
   digitalWrite(LATCH2, HIGH);
