@@ -65,7 +65,7 @@ void loop() {
    digitalWrite(LATCH2, HIGH);
    delay(80);
   }  
-  
+  az
   //third pattern
   for (var i = 7; i >= 0; i--) {
    digitalWrite(LATCH1, LOW);
